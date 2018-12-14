@@ -14,6 +14,9 @@ nginx/pcre-8.40.tar.gz:
   size: 2065161
   object_id: 3c5c62a0-dfdc-46ca-7279-d80161300987
   sha: 10384eb3d411794cc15f55b9d837d3f69e35391e
+oauth2_proxy/oauth2_proxy-2.2.0.tar.gz:
+  size: 3339647
+  sha: 1c73bc38141e079441875e5ea5e1a1d6054b4f3b
 patches/nginx-upload-module.patch:
   size: 657
   object_id: 27c1b860-1fcf-418a-7342-fca9ac3576c6
