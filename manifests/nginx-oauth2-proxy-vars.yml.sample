@@ -1,0 +1,14 @@
+oauth2_proxy-client_id: xxxxxxxxxxxxxxxxxxxx
+oauth2_proxy-client_secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+oauth2_proxy-cookie_secret: xxxxxxxxxxxxxxxxxxxx
+oauth2_proxy-cookie_domain: .example.com
+oauth2_proxy-domains: [example.com]
+oauth2_proxy-provider: github
+oauth2_proxy-login_url: https://github-ent.example.com/login/oauth/authorize
+oauth2_proxy-redeem_url: https://github-ent.example.com/login/oauth/access_token
+oauth2_proxy-validate_url: https://github-ent.example.com/api/v3
+oauth2_proxy-pass-basic-auth: false
+oauth2_proxy-url: https://auth.example.com
+oauth2_proxy-redirect-url: https://auth.example.com/oauth2/callback
+oauth2_proxy-http_address: 127.0.0.1:4180
+oauth2_proxy-upstream: https://web.example.com

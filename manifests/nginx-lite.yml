@@ -2,8 +2,10 @@
 name: nginx
 
 releases:
-- name: nginx
-  version: latest
+- name: nginx-oauth2
+  version: ((nginx_oauth2_version))
+  url: https://github.com/daichi703n/nginx-oauth2-boshrelease/releases/download/((nginx_oauth2_version))/nginx-oauth2-boshrelease-((nginx_oauth2_version)).tgz
+  sha1: ((nginx_oauth2_sha1))
 
 stemcells:
 # Centos 3421.11 _appears_ not to work under BOSH Lite
@@ -23,7 +25,7 @@ instance_groups:
     static_ips: [ 10.244.0.34 ]
   jobs:
   - name: nginx
-    release: nginx
+    release: nginx-oauth2
     properties:
       nginx_conf: |
         user nobody vcap; # group vcap can read most directories
@@ -66,6 +68,25 @@ instance_groups:
             </body></html>
         EOF
         fi
+  - name: oauth2_proxy
+    release: nginx-oauth2
+    properties:
+      oauth2_proxy:
+        client_id: ((oauth2_proxy-client_id))
+        client_secret: ((oauth2_proxy-client_secret))
+        cookie_name: _oauth2_proxy
+        cookie_refresh: 1h
+        cookie_secret: ((oauth2_proxy-cookie_secret))
+        cookie_domain: ((oauth2_proxy-cookie_domain))
+        email_domain: ((oauth2_proxy-domains))
+        http_address: ((oauth2_proxy-http_address))
+        redirect_url: ((oauth2_proxy-url))/oauth2/callback
+        upstream: ((oauth2_proxy-upstream))
+        provider: ((oauth2_proxy-provider))
+        login_url: ((oauth2_proxy-login_url))
+        redeem_url: ((oauth2_proxy-redeem_url))
+        validate_url: ((oauth2_proxy-validate_url))
+        pass_basic_auth: ((oauth2_proxy-pass-basic-auth))
 update:
   canaries: 1
   max_in_flight: 1

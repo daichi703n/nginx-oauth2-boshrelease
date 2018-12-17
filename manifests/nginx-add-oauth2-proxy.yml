@@ -1,0 +1,18 @@
+- type: replace
+  path: /instance_groups/name=nginx/jobs/name=oauth2_proxy/properties?/oauth2_proxy?
+  value:
+    client_id: "((oauth2_proxy-client_id))"
+    client_secret: "((oauth2_proxy-client_secret))"
+    cookie_name: "_oauth2_proxy"
+    cookie_refresh: "1h"
+    cookie_secret: "((oauth2_proxy-cookie_secret))"
+    cookie_domain: ((oauth2_proxy-cookie_domain))
+    email_domain: ((oauth2_proxy-domains))
+    http_address: ((oauth2_proxy-http_address))
+    redirect_url: "((oauth2_proxy-url))/oauth2/callback"
+    upstream: ((oauth2_proxy-upstream))
+    provider: ((oauth2_proxy-provider))
+    login_url: ((oauth2_proxy-login_url))
+    redeem_url: ((oauth2_proxy-redeem_url))
+    validate_url: ((oauth2_proxy-validate_url))
+    pass_basic_auth: ((oauth2_proxy-pass-basic-auth))
