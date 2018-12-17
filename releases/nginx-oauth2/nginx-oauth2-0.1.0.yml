@@ -1,0 +1,33 @@
+name: nginx-oauth2
+version: 0.1.0
+commit_hash: a635f27
+uncommitted_changes: false
+jobs:
+- name: nginx
+  version: 726c01074eae48c823150c7c4e9c3faf69d4e2ba
+  fingerprint: 726c01074eae48c823150c7c4e9c3faf69d4e2ba
+  sha1: a7742410632c2003621033e74f989c952ee9e055
+- name: oauth2_proxy
+  version: 3ea77483839a693c0ce86836722d50d4a98ebfcb
+  fingerprint: 3ea77483839a693c0ce86836722d50d4a98ebfcb
+  sha1: 024a988e5a48c06e1e5870ded59c57031a0a35d8
+packages:
+- name: bosh-helpers
+  version: cab3f7d1012fb8d71910fd9b84be7a222ae4bbc3
+  fingerprint: cab3f7d1012fb8d71910fd9b84be7a222ae4bbc3
+  sha1: ac242fc5102a5966170b8ee4556e9ac9e6364172
+  dependencies: []
+- name: nginx
+  version: 0d99d0f1438aa34b915e275d6de7dc2b89a4b512
+  fingerprint: 0d99d0f1438aa34b915e275d6de7dc2b89a4b512
+  sha1: 869ae68c69100a47986a8ae31216162700acda3f
+  dependencies: []
+- name: oauth2_proxy
+  version: c01ac4256539e9008dd61340af711f66efd7f449
+  fingerprint: c01ac4256539e9008dd61340af711f66efd7f449
+  sha1: 85e26b6883728e3a011468dfed06c84f571f69a3
+  dependencies: []
+license:
+  version: a3e6d245553160dad1d273d363550134abc94578
+  fingerprint: a3e6d245553160dad1d273d363550134abc94578
+  sha1: 3947d7db185c70793e1d4e971ac82401b289e792
