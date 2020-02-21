@@ -12,6 +12,7 @@ blobs
 *~
 *#
 #*
+.downloads
 backups/*
 releases/**/*.tgz
 src/nginx/*gz
