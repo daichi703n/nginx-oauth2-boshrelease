@@ -6,6 +6,10 @@ nginx/nginx-1.13.12.tar.gz:
   size: 1016311
   object_id: 103a797d-4eb2-484b-4150-89460c2451db
   sha: ad26921175b28acb8ae6c4eda59050df83279e6e
+nginx/nginx-1.17.0.tar.gz:
+  size: 1032978
+  object_id: 77c5d34a-2359-4bd5-7dca-734a611cf500
+  sha: ab32ce6cff4bcb8c438aadcad9dc2544c66b55fd
 nginx/nginx-upload-module-2.2.tar.gz:
   size: 28505
   object_id: 96b4cf0b-8a95-4137-475f-51c46f848f0c
