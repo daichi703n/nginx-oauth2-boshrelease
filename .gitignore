@@ -12,6 +12,8 @@ blobs
 *~
 *#
 #*
+.downloads
 backups/*
+bosh-releases/**/*.tgz
 releases/**/*.tgz
 src/nginx/*gz
